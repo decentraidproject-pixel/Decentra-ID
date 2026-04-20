@@ -10,7 +10,7 @@ function AdminLogin() {
   const login = async () => {
     try {
       const res = await axios.post(
-        "https://decentraid-4-4y2v.onrender.com/api/institution/admin/login",
+        "https://decentraidbackend-2.onrender.com/api/institution/admin/login",
         { username, password }
       );
 
