@@ -24,7 +24,7 @@ function VerifierLogin() {
     try {
       
       const res = await axios.post(
-        "http://localhost:5000/api/institution/login",
+        "https://decentraidbackend-2.onrender.com/api/institution/login",
         formData
       );
 
