@@ -1,0 +1,14 @@
+body{
+    background-color:#000000;
+}
+
+.move{
+    @media (min-width: 600px) {
+  margin-left: 500px;
+  width: 600px;
+}
+}
+
+/*
+#0B1220
+*/
