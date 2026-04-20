@@ -20,7 +20,7 @@ const UserLookup = () => {
       setError("");
 
       const res = await axios.get(
-        `http://localhost:5000/api/posts/userByEmail/${email}`
+        `https://decentraidbackend-2.onrender.com/api/posts/userByEmail/${email}`
       );
 
       setData(res.data);
