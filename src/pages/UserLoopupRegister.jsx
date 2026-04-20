@@ -64,7 +64,7 @@ function Register() {
       const payload = { ...formData };
       delete payload.declaration;
 
-      await axios.post("http://localhost:5000/api/institution/verifierRegister", payload);
+      await axios.post("https://decentraidbackend-2.onrender.com/api/institution/verifierRegister", payload);
 
       alert("Registration successful!");
       window.location.href = "http://localhost:5173/VerifyUserLogin";
