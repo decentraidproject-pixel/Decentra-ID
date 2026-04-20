@@ -64,7 +64,7 @@ function Register() {
       const payload = { ...formData };
       delete payload.declaration;
 
-      await axios.post("https://decentraid-4-4y2v.onrender.com/api/institution/register", payload);
+      await axios.post("https://decentraidbackend-2.onrender.com/api/institution/register", payload);
 
       alert("Registration successful!");
       navigate("verifier-Portal/VerifierLogin");
