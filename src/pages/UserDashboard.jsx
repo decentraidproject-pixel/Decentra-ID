@@ -38,7 +38,7 @@ function UserDashboard() {
   const fetchInstitutions = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/institutions/approved"
+        "https://decentraidbackend-2.onrender.com/api/institutions/approved"
       );
       setInstitutions(res.data || []);
     } catch (err) {
@@ -49,7 +49,7 @@ function UserDashboard() {
   const fetchPosts = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/posts/user/${userId}`
+        `https://decentraidbackend-2.onrender.com/api/posts/user/${userId}`
       );
       setPosts(res.data.posts || []);
       setScore(res.data.user.reputationScore || 0);
@@ -101,7 +101,7 @@ function UserDashboard() {
       if (file) formData.append("file", file);
 
       await axios.post(
-        "http://localhost:5000/api/posts/create",
+        "https://decentraidbackend-2.onrender.com/api/posts/create",
         formData,
         {
           headers: {
