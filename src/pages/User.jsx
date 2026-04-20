@@ -16,7 +16,7 @@ const User = () => {
 
 const fetchApproved = async () => {
   try {
-    const res = await axios.get("https://decentraidbackend-2.onrender.com/api/user/approved"); // must match backend
+    const res = await axios.get("https://decentraidbackend-2.onrender.com/api/user/approved"); 
     setApprovedInstitutions(res.data);
   } catch (err) {
     console.error("Error fetching approved institutions:", err.message);
