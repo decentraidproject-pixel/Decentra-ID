@@ -25,7 +25,7 @@ function VerifierDashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "https://decentraid-4-4y2v.onrender.com/api/posts/verifier",
+        "https://decentraidbackend-2.onrender.com/api/posts/verifier",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -50,7 +50,7 @@ function VerifierDashboard() {
 
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/posts/verify/${postId}`,
+        `https://decentraidbackend-2.onrender.com/api/posts/verify/${postId}`,
         { decision },
         { headers: { Authorization: `Bearer ${token}` } }
       );
