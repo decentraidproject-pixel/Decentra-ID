@@ -67,7 +67,7 @@ function Register() {
       await axios.post("https://decentraidbackend-2.onrender.com/api/institution/verifierRegister", payload);
 
       alert("Registration successful!");
-      window.location.href = "http://localhost:5173/VerifyUserLogin";
+      window.location.href = "https://decentraidfp.vercel.app/VerifyUserLogin";
 
     } catch (err) {
       console.error(err);
