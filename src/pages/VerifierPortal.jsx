@@ -4,11 +4,11 @@ function UserPortal() {
   const navigate = useNavigate();
 
   const login = () => {
-    window.location.href="http://localhost:5173/verifier-Login";
+    window.location.href="https://decentraidfp.vercel.app/verifier-Login";
   };
 
   const register = () => {
-     window.location.href="http://localhost:5173/FaceAuth"; 
+     window.location.href="https://decentraidfp.vercel.app/FaceAuth"; 
   };
 
   return (
