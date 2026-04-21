@@ -4,7 +4,7 @@ function UserPortal() {
   const navigate = useNavigate();
 
   function login() {
-    window.location.href="http://localhost:5173/user-Login";
+    window.location.href="https://decentraidfp.vercel.app/user-Login";
   }
 
   function register() {
