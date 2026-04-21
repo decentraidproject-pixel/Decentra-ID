@@ -45,7 +45,7 @@ localStorage.setItem("verifierToken", res.data.token);
       alert("Login Successful");
 
    
-      window.location.href="http://localhost:5173/verifier-dashboard";
+      window.location.href="https://decentraidfp.vercel.app/verifier-dashboard";
     } catch (err) {
       console.error("Login error:", err);
       alert(err.response?.data?.message || "Login failed");
