@@ -67,7 +67,7 @@ function Register() {
       await axios.post("https://decentraidbackend-2.onrender.com/api/institution/register", payload);
 
       alert("Registration successful!");
-      navigate("verifier-Portal/VerifierLogin");
+      navigate("verifier-Login");
     } catch (err) {
       console.error(err);
       alert(err.response?.data?.message || "Registration failed");
