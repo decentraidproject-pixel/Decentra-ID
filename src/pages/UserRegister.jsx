@@ -28,7 +28,7 @@ function UserRegister() {
       );
 
       alert("User Registered Successfully");
-      window.location.href="http://localhost:5173/verifier-Login";
+      window.location.href="https://decentraidfp.vercel.app/verifier-Login";
 
     } catch (err) {
 
